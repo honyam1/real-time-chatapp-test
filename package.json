@@ -1,5 +1,5 @@
 {
-  "name": "chatapp-tutorial",
+  "name": "HakoChat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,9 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "node-fetch": "^3.3.1",
     "socket.io": "^4.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "type": "module"
 }
