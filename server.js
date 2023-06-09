@@ -21,7 +21,7 @@ io.on("connection", (socket) => {
   socket.on("chat message", async (msg) => {
     io.emit("chat message", msg);
 
-    const data = { content: `Message: ${msg}` };
+    const data = { content: `${msg}` };
 
     for (const url of webhookUrls) {
       const response = await fetch(url, {
